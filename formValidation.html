@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>Form Validation Challenge</head>
+    <head>
+        <meta charset=utf-8>
+        <link rel="stylesheet" type="text/css" href="css/validationStylesheet.css"
+        <title>Validation Challenge</title>
+
+
+    </head>
 
     <body>
         <form action="info.php" method="post">
             <p>
                 <label for="userId">User Id:</label>
-                    <input type="text" id="userId" name="userId" required minlength="5" maxlength="12">
+                    <input class="textbox" type="text" id="userId" name="userId" required minlength="5" maxlength="12">
             </p>
 
             <p>
-                <label for="password">Password:</label>
-                    <input type="text" id="password" name="password" required minlength="7" maxlength="12">
+                <label  for="password">Password:</label>
+                    <input class="textbox" type="text" id="password" name="password" required minlength="7" maxlength="12">
             </p>
 
             <p>
                 <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required pattern="[a-z A-Z]">
+                    <input class="textbox" type="text" id="name" name="name" required pattern="[a-z A-Z]">
             </p>
             
             <p>
                 <label for="address">Address:</label>
-                    <input type="address" id="address" name="address">
+                    <input class="textbox" type="address" id="address" name="address">
             </p>
 
             <p>
                 <label for="country">Country:</label>
-                        <select type="country" id="country" name="country" required>
+                        <select class="textbox" type="country" id="country" name="country" required>
                             <option value="South Africa">South Africa</option>
                         </select>
             </p>
 
             <p>
                 <label for="zipCode">Zip Code:</label>
-                    <input type="number" id="zipCode" name="zipCode" required>
+                    <input class="textbox" type="number" id="zipCode" name="zipCode" required>
             </p>
 
             <p>
                 <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required inputmode="email">
+                    <input class="textbox" type="email" id="email" name="email" required inputmode="email">
             </p>
 
             <p>
                 <label for="sex">Sex:</label>
-                    <label for="male">Male</label>
-                    <input type="radio" id="sex" name="sex" required>
+                    <label class="textbox" for="male">Male</label>
+                    <input class="textbox" type="radio" id="sex" name="sex" required>
 
-                    <label for="female">Female</label>
-                    <input type="radio" id="sex" name="sex" required>
+                    <label class="textbox" for="female">Female</label>
+                    <input class="textbox" type="radio" id="sex" name="sex" required>
             </p>
 
             <p> 
                 <label for="language">Language:</label>
-                     <label for="english">English</label>
-                        <input type="checkbox" checked id="language" name="language" required>
-                     <label for="nonEnglish">Non English</label>
-                        <input type="checkbox" id="language" name="language" required>
+                     <label class="textbox" for="english">English</label>
+                        <input class="textbox" type="checkbox" checked id="language" name="language" required>
+                     <label class="textbox" for="nonEnglish">Non English</label>
+                        <input class="textbox" type="checkbox" id="language" name="language" required>
             </p>
             
             <p>
                 <label for="about">About:</label>
-                        <textarea>
+                        <textarea class="textbox">
                         </textarea>
             </p>
 
