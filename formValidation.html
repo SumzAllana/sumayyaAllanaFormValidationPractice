@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>Form Validation Challenge</head>
+
+    <body>
+        <form action="info.php" method="post">
+            <p>
+                <label for="userId">User Id:</label>
+                    <input type="text" id="userId" name="userId" required minlength="5" maxlength="12">
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                    <input type="text" id="password" name="password" required minlength="7" maxlength="12">
+            </p>
+
+            <p>
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required pattern="[a-z A-Z]">
+            </p>
+            
+            <p>
+                <label for="address">Address:</label>
+                    <input type="address" id="address" name="address">
+            </p>
+
+            <p>
+                <label for="country">Country:</label>
+                        <select type="country" id="country" name="country" required>
+                            <option value="South Africa">South Africa</option>
+                        </select>
+            </p>
+
+            <p>
+                <label for="zipCode">Zip Code:</label>
+
+            </p>
+
+        </form>
+
+    </body>
+
+
+</html>
